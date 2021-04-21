@@ -1,0 +1,29 @@
+.sideTab{
+    position: fixed;
+    z-index: 5;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    display: none;
+}
+.show{
+    display: block;
+}
+
+.sideTab-list_sec{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.sideTab-list-wrapper{
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.sideTab-list-wrapper p{
+    color: #6c63ff;
+    font-weight: 600;
+}

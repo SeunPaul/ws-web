@@ -1,0 +1,114 @@
+.web-navigation{
+    position: fixed;
+    z-index: 2;
+    height: 3rem;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px -5px #e3e3e3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem 1rem;
+}
+.web_nav-logo_sec{
+  display: flex;
+  align-items: center;
+}
+.web_nav-logo{
+    fill: #000;
+    width: 2rem;
+    height: 1.5rem;
+}
+
+.web_nav-list_sec{
+    display: none;
+    flex-wrap: wrap;
+    width: 28rem;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.web-list_wrapper{
+    text-decoration: none;
+}
+.web_nav-list_item{
+    margin: 0;
+    color: black;
+}
+.webactive{
+    border-radius: 5px;
+    color: white;
+    background-color: #6c63ff;
+    padding: .5rem .7rem;
+}
+
+.web_menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .web_menu-btn__burger {
+    width: 13px;
+    height: 2px;
+    background: black;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .web_menu-btn__burger::before,
+  .web_menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background: black;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .web_menu-btn__burger::before {
+    transform: translate(-10px, -7px);
+  }
+  
+  .web_menu-btn__burger::after {
+    transform: translate(-10px, 7px);
+  }
+  
+  .web_menu-open .web_menu-btn__burger {
+    transform: translateX(28px);
+    background: transparent;
+  }
+  
+  .web_menu-open .web_menu-btn__burger::before {
+    transform: rotate(45deg) translate(-30px, 30px);
+  }
+  
+  .web_menu-open .web_menu-btn__burger::after {
+    transform: rotate(-45deg) translate(-30px, -30px);
+  }
+
+
+  @media (min-width: 40rem){
+    .web_nav-list_sec{
+        display: flex;
+    }
+    .web_menu-btn{
+        display: none;
+    }
+    .web-navigation{
+        height: 3.5rem;
+        padding: 0.2rem 2.5rem;
+    }
+    .web_nav-logo{
+        width: 2.5rem;
+        height: 2rem;
+    }
+  }
