@@ -98,7 +98,7 @@ const Home = ()=>{
                             Contact Us
                         </div>
                         <div className = "web-contact-options">
-                            <a href="https://api.whatsapp.com/send?phone=2349083435247&text=Hi%20Waltersam%2C%20I%20am" target="_blank" className = "web-contact-options-wa"><WhatsApp className="web-contact-options-ico"/>WhatsApp</a>
+                            <a href="https://api.whatsapp.com/send?phone=2349083435247&text=Hi%20Waltersam%2C%20I%20am" target="_blank" rel="noreferrer" className = "web-contact-options-wa"><WhatsApp className="web-contact-options-ico"/>WhatsApp</a>
                             <Link to="/contact" className = "web-contact-options-e"><Email className="web-contact-options-ico"/>Email</Link>
                         </div>
                     </div>
